@@ -21,6 +21,6 @@ jobs:
       - name: Upload the PHAR
         uses: actions/upload-artifact@v3
         with:
-          name: 'jolinotif'
-          path: tools/phar/build/jolinotif.phar
+          name: 'php-os-gui-notify'
+          path: tools/phar/build/php-os-gui-notify.phar
           if-no-files-found: error

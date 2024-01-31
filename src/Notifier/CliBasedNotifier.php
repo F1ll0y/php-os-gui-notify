@@ -53,14 +53,13 @@ abstract class CliBasedNotifier implements Notifier
         return false;
     }
 
-    public function send(Notification $notification): bool
+    /**
+     * returns path to binary which must be used
+     *
+     * @return string path of binary
+     */
+    private function getBinaryForExecution(): string
     {
-        if (!$notification->getBody()) {
-            throw new InvalidNotificationException($notification, 'Notification body can not be empty');
-        }
-
-        $arguments = $this->getCommandLineArguments($notification);
-
         if (self::SUPPORT_BINARY_PROVIDED === $this->support && $this instanceof BinaryProvider) {
             $dir = rtrim($this->getRootDir(), '/') . '/';
             $embeddedBinary = $dir . $this->getEmbeddedBinary();
@@ -78,16 +77,60 @@ abstract class CliBasedNotifier implements Notifier
             $binary = $this->getBinary();
         }
 
-        $process = new Process(array_merge([$binary], $arguments));
+        return $binary;
+    }
+
+    /**
+     * runs binary with given arguments
+     *
+     * @param array $args arguments which must be used for running the binary
+     * @return bool returns true, if the process is called and returns exit code 0, otherwise false
+     */
+    private function runBinary(array $args): bool
+    {
+        $binary = $this->getBinaryForExecution();
+
+        $process = new Process(array_merge([$binary], $args));
         $process->run();
 
         return $this->handleExitCode($process);
     }
 
     /**
+     * installs application to os, so notifications will have the flavour of your application
+     *
+     * @param string $appName
+     * @param string $pathToExecutable
+     * @param string $appId
+     * @return bool
+     */
+    public function install(string $appName, string $pathToExecutable, string $appId): bool
+    {
+        $arguments = $this->getInstallCommandLineArguments($appName, $pathToExecutable, $appId);
+
+        return $this->runBinary($arguments);
+    }
+
+    public function send(Notification $notification): bool
+    {
+        if (!$notification->getBody()) {
+            throw new InvalidNotificationException($notification, 'Notification body can not be empty');
+        }
+
+        $arguments = $this->getCommandLineArguments($notification);
+
+        return $this->runBinary($arguments);
+    }
+
+    /**
      * Configure the process to run in order to send the notification.
      */
     abstract protected function getCommandLineArguments(Notification $notification): array;
+
+    /**
+     * Configure the process to run in order to install this application, so we get this notification with the flavour of our application
+     */
+    abstract protected function getInstallCommandLineArguments(string $appName, string $pathToExecutable, string $appId): array;
 
     /**
      * Get the binary to check existence.

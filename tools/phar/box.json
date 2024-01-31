@@ -20,6 +20,6 @@
         }
     ],
     "git-version": "package_version",
-    "main": "jolinotif",
-    "output": "tools/phar/build/jolinotif.phar"
+    "main": "php-os-gui-notify",
+    "output": "tools/phar/build/php-os-gui-notify.phar"
 }
