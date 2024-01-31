@@ -13,14 +13,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Build the PHAR
         uses: ./.github/actions/phar
 
       - name: Upload the PHAR
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: 'jolinotif'
-          path: tools/phar/build/jolinotif.phar
+          name: 'php-os-gui-notify'
+          path: tools/phar/build/php-os-gui-notify.phar
           if-no-files-found: error

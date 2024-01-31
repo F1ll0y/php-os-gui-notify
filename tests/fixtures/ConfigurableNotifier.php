@@ -41,4 +41,10 @@ class ConfigurableNotifier implements Notifier
     {
         return $this->sendReturn;
     }
+
+    public function install(string $appName, string $pathToExecutable, string $appId): bool
+    {
+        // TODO: Implement install() method.
+        return true;
+    }
 }

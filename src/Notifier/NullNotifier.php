@@ -30,4 +30,15 @@ class NullNotifier implements Notifier
     {
         return false;
     }
+
+    protected function getInstallCommandLineArguments(string $appName, string $pathToExecutable, string $appId): array
+    {
+        // TODO: Implement getInstallCommandLineArguments() method.
+        return [];
+    }
+
+    public function install(string $appName, string $pathToExecutable, string $appId): bool
+    {
+        return true;
+    }
 }

@@ -76,4 +76,10 @@ class ToasterNotifier extends CliBasedNotifier implements BinaryProvider
 
         return $arguments;
     }
+
+    protected function getInstallCommandLineArguments(string $appName, string $pathToExecutable, string $appId): array
+    {
+        // TODO: Implement getInstallCommandLineArguments() method.
+        return [];
+    }
 }

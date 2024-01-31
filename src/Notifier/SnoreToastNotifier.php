@@ -53,6 +53,16 @@ class SnoreToastNotifier extends CliBasedNotifier implements BinaryProvider
         return [];
     }
 
+    protected function getInstallCommandLineArguments(string $appName, string $pathToExecutable, string $appId): array
+    {
+        return [
+            'install',
+            $appName,
+            $pathToExecutable,
+            $appId,
+        ];
+    }
+
     protected function getCommandLineArguments(Notification $notification): array
     {
         $arguments = [

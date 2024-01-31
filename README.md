@@ -1,3 +1,8 @@
+# About JoliNotif
+
+forked from <a href="https://github.com/jolicode/JoliNotif">jolicode/JoliNotif<a>
+
+
 <p align="center">
     <img src=doc/images/demo.gif alt="JoliNotif demo" />
 </p>
@@ -8,7 +13,6 @@
     <a href="https://packagist.org/packages/jolicode/jolinotif"><img src="https://poser.pugx.org/jolicode/jolinotif/v/unstable" alt="Latest Unstable Version"></img></a>
 </p>
 
-# About JoliNotif
 
 JoliNotif is a cross-platform PHP library to display desktop notifications.
 It works on Linux, Windows or MacOS.
