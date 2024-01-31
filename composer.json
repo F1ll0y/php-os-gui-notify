@@ -1,6 +1,6 @@
 {
-    "name": "jolicode/jolinotif",
-    "description": "Send desktop notifications on Windows, Linux, MacOS.",
+    "name": "f1ll0y/php-os-gui-notify",
+    "description": "Send desktop os notifications on Windows, Linux, MacOS.",
     "keywords": ["notification", "windows", "linux", "mac", "growl"],
     "license": "MIT",
     "type": "library",
@@ -8,6 +8,10 @@
         {
             "name": "Loïck Piera",
             "email": "pyrech@gmail.com"
+        },
+        {
+            "name": "Daniel Neuendorf",
+            "email": "gh@danielneuendorf.de"
         }
     ],
     "autoload": {
@@ -31,7 +35,7 @@
         "symfony/phpunit-bridge": "^5.4 || ^6.0 || ^7.0"
     },
     "bin": [
-        "jolinotif"
+        "php-os-gui-notify"
     ],
     "config": {
         "sort-packages": true
