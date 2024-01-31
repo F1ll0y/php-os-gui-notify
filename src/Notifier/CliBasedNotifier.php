@@ -57,6 +57,7 @@ abstract class CliBasedNotifier implements Notifier
      * returns path to binary which must be used
      *
      * @return string path of binary
+     * installs application to os, so notifications will have the flavour of your application.
      */
     private function getBinaryForExecution(): string
     {

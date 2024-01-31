@@ -11,4 +11,7 @@
 
 namespace Joli\JoliNotif\Exception;
 
-interface Exception {}
+interface Exception
+{
+
+}

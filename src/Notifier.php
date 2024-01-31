@@ -28,15 +28,16 @@ interface Notifier
     /**
      * this method is used to create start menu entries for windows, so notifications can get the flavour of your application
      *
-     * @param string $appName name and path for start menue (e.g. MyApp/MyApp.lnk))
-     * @param string $pathToExecutable path to exe file of this application
-     * @param string $appId app id used for notifications
+     * @param string $appName           name and path for start menue (e.g. MyApp/MyApp.lnk))
+     * @param string $pathToExecutable  path to exe file of this application
+     * @param string $appId             app id used for notifications
      * @return bool if its succeed
      */
     public function install(string $appName, string $pathToExecutable, string $appId): bool;
 
     /**
      * The supported notifier with the higher priority will be preferred.
+     *
      * @return int get priority as int value (higher is more important))
      */
     public function getPriority(): int;
