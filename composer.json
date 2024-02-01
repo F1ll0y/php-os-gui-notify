@@ -3,6 +3,7 @@
     "description": "Send desktop os notifications on Windows, Linux, MacOS.",
     "keywords": ["notification", "windows", "linux", "mac", "growl"],
     "license": "MIT",
+    "version": "3.0.0",
     "type": "library",
     "authors": [
         {
