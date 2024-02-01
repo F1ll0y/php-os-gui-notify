@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests\Notifier;
+namespace F1ll0y\PHPOSGUINotify\tests\Notifier;
 
-use Joli\JoliNotif\Notifier;
+use F1ll0y\PHPOSGUINotify\Notifier;
 use PHPUnit\Framework\TestCase;
 
 abstract class NotifierTestCase extends TestCase

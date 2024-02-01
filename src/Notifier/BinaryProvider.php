@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\Notifier;
+namespace F1ll0y\PHPOSGUINotify\Notifier;
 
 /**
  * Interface implemented by notifiers when they provide their own binaries in

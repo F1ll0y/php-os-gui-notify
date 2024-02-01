@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests\Util;
+namespace F1ll0y\PHPOSGUINotify\tests\Util;
 
-use Joli\JoliNotif\Util\PharExtractor;
+use F1ll0y\PHPOSGUINotify\Util\PharExtractor;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Finder;
 

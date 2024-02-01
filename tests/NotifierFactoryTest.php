@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests;
+namespace F1ll0y\PHPOSGUINotify\tests;
 
 use Joli\JoliNotif\Exception\NoSupportedNotifierException;
 use Joli\JoliNotif\Notifier\AppleScriptNotifier;

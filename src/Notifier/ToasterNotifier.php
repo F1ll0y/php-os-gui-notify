@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\Notifier;
+namespace F1ll0y\PHPOSGUINotify\Notifier;
 
 use Joli\JoliNotif\Notification;
 use JoliCode\PhpOsHelper\OsHelper;

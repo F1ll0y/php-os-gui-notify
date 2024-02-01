@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\Exception;
+namespace F1ll0y\PHPOSGUINotify\Exception;
 
 class NoSupportedNotifierException extends \RuntimeException implements Exception
 {

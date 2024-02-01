@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-use Joli\JoliNotif\Notification;
-use Joli\JoliNotif\Notifier\NullNotifier;
-use Joli\JoliNotif\NotifierFactory;
+use F1ll0y\PHPOSGUINotify\Notification;
+use F1ll0y\PHPOSGUINotify\Notifier\NullNotifier;
+use F1ll0y\PHPOSGUINotify\NotifierFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
 

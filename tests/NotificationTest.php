@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests;
+namespace F1ll0y\PHPOSGUINotify\tests;
 
-use Joli\JoliNotif\Notification;
+use F1ll0y\PHPOSGUINotify\Notification;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Finder;
 

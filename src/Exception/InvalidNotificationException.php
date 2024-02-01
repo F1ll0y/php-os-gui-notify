@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\Exception;
+namespace F1ll0y\PHPOSGUINotify\Exception;
 
-use Joli\JoliNotif\Notification;
+use F1ll0y\PHPOSGUINotify\Notification;
 
 class InvalidNotificationException extends \LogicException implements Exception
 {

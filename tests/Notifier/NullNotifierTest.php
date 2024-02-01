@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests\Notifier;
+namespace F1ll0y\PHPOSGUINotify\tests\Notifier;
 
-use Joli\JoliNotif\Notification;
-use Joli\JoliNotif\Notifier;
-use Joli\JoliNotif\Notifier\NullNotifier;
+use F1ll0y\PHPOSGUINotify\Notification;
+use F1ll0y\PHPOSGUINotify\Notifier;
+use F1ll0y\PHPOSGUINotify\Notifier\NullNotifier;
 
 class NullNotifierTest extends NotifierTestCase
 {

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests\fixtures;
+namespace F1ll0y\PHPOSGUINotify\tests\fixtures;
 
-use Joli\JoliNotif\Notification;
-use Joli\JoliNotif\Notifier;
+use F1ll0y\PHPOSGUINotify\Notification;
+use F1ll0y\PHPOSGUINotify\Notifier;
 
 class ConfigurableNotifier implements Notifier
 {

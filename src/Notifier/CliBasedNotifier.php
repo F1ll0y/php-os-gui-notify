@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\Notifier;
+namespace F1ll0y\PHPOSGUINotify\Notifier;
 
-use Joli\JoliNotif\Exception\InvalidNotificationException;
-use Joli\JoliNotif\Notification;
-use Joli\JoliNotif\Notifier;
-use Joli\JoliNotif\Util\PharExtractor;
+use F1ll0y\PHPOSGUINotify\Exception\InvalidNotificationException;
+use F1ll0y\PHPOSGUINotify\Notification;
+use F1ll0y\PHPOSGUINotify\Notifier;
+use F1ll0y\PHPOSGUINotify\Util\PharExtractor;
 use JoliCode\PhpOsHelper\OsHelper;
 use Symfony\Component\Process\Process;
 

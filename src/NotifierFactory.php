@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif;
+namespace F1ll0y\PHPOSGUINotify;
 
-use Joli\JoliNotif\Exception\NoSupportedNotifierException;
-use Joli\JoliNotif\Notifier\AppleScriptNotifier;
-use Joli\JoliNotif\Notifier\GrowlNotifyNotifier;
-use Joli\JoliNotif\Notifier\KDialogNotifier;
-use Joli\JoliNotif\Notifier\NotifuNotifier;
-use Joli\JoliNotif\Notifier\NotifySendNotifier;
-use Joli\JoliNotif\Notifier\NullNotifier;
-use Joli\JoliNotif\Notifier\SnoreToastNotifier;
-use Joli\JoliNotif\Notifier\TerminalNotifierNotifier;
+use F1ll0y\PHPOSGUINotify\Exception\NoSupportedNotifierException;
+use F1ll0y\PHPOSGUINotify\Notifier\AppleScriptNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\GrowlNotifyNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\KDialogNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\NotifuNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\NotifySendNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\NullNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\SnoreToastNotifier;
+use F1ll0y\PHPOSGUINotify\Notifier\TerminalNotifierNotifier;
 use JoliCode\PhpOsHelper\OsHelper;
 
 class NotifierFactory

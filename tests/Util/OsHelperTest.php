@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\tests\Util;
+namespace F1ll0y\PHPOSGUINotify\tests\Util;
 
-use Joli\JoliNotif\Util\OsHelper;
+use F1ll0y\PHPOSGUINotify\Util\OsHelper;
 use PHPUnit\Framework\TestCase;
 
 class OsHelperTest extends TestCase

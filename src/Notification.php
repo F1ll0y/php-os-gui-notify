@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif;
+namespace F1ll0y\PHPOSGUINotify;
 
-use Joli\JoliNotif\Util\PharExtractor;
+use F1ll0y\PHPOSGUINotify\Util\PharExtractor;
 use JoliCode\PhpOsHelper\OsHelper;
 
 class Notification

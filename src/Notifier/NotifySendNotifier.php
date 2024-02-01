@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Joli\JoliNotif\Notifier;
+namespace F1ll0y\PHPOSGUINotify\Notifier;
 
-use Joli\JoliNotif\Notification;
+use F1ll0y\PHPOSGUINotify\Notification;
 
 /**
  * This notifier can be used on most Linux distributions, using the command notify-send.
