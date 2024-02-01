@@ -11,9 +11,9 @@
 
 namespace F1ll0y\PHPOSGUINotify\tests\Notifier;
 
-use Joli\JoliNotif\Notifier;
-use Joli\JoliNotif\Notifier\AppleScriptNotifier;
-use Joli\JoliNotif\Util\OsHelper;
+use F1ll0y\PHPOSGUINotify\Notifier;
+use F1ll0y\PHPOSGUINotify\Notifier\AppleScriptNotifier;
+use F1ll0y\PHPOSGUINotify\Util\OsHelper;
 
 class AppleScriptNotifierTest extends NotifierTestCase
 {
